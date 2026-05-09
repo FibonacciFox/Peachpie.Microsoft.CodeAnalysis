@@ -4,6 +4,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <RootNamespace>Microsoft.CodeAnalysis</RootNamespace>
+    <AssemblyName>Peachpie.Microsoft.CodeAnalysis</AssemblyName>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <TargetFrameworks>$(NetRoslynSourceBuild);netstandard2.0</TargetFrameworks>
     <DefineConstants>$(DefineConstants);COMPILERCORE;MICROSOFT_CODEANALYSIS_CONTRACTS_NO_CONTRACT</DefineConstants>
@@ -17,11 +18,15 @@
 
     <!-- NuGet -->
     <IsPackable>true</IsPackable>
-    <PackageId>Microsoft.CodeAnalysis.Common</PackageId>
+    <PackageId>Peachpie.Microsoft.CodeAnalysis</PackageId>
     <PackageDescription>
-      A shared package used by the Microsoft .NET Compiler Platform ("Roslyn").
-      Do not install this package manually, it will be added as a prerequisite by other packages that require it.
+      Roslyn CodeAnalysis modified for PeachPie compiler integration.
     </PackageDescription>
+    <Authors>Microsoft; PeachPie; Jakub Masek; Robert Husak</Authors>
+    <PackageTags>php;peachpie;dotnet;compiler;roslyn</PackageTags>
+    <RepositoryUrl>https://github.com/peachpiecompiler/Peachpie.Microsoft.CodeAnalysis</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/peachpiecompiler/Peachpie.Microsoft.CodeAnalysis</PackageProjectUrl>
+    <StrongNameKeyId>Open</StrongNameKeyId>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Operations\OperationInterfaces.xml" />

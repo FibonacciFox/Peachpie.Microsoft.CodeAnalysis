@@ -27,7 +27,6 @@
     <RepositoryUrl>https://github.com/peachpiecompiler/Peachpie.Microsoft.CodeAnalysis</RepositoryUrl>
     <PackageProjectUrl>https://github.com/peachpiecompiler/Peachpie.Microsoft.CodeAnalysis</PackageProjectUrl>
     <PackageReadmeFile>PACKAGE-README.md</PackageReadmeFile>
-    <StrongNameKeyId>Open</StrongNameKeyId>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Operations\OperationInterfaces.xml" />

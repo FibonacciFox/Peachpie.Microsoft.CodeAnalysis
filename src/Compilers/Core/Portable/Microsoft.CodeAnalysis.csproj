@@ -25,12 +25,9 @@
     <Authors>Microsoft; PeachPie; Jakub Masek; Robert Husak</Authors>
     <PackageTags>php;peachpie;dotnet;compiler;roslyn</PackageTags>
     <RepositoryUrl>https://github.com/peachpiecompiler/Peachpie.Microsoft.CodeAnalysis</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/peachpiecompiler/Peachpie.Microsoft.CodeAnalysis</PackageProjectUrl>
-    <PackageReadmeFile>PACKAGE-README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Operations\OperationInterfaces.xml" />
-    <None Include="PACKAGE-README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
     <!--

@@ -26,10 +26,12 @@
     <PackageTags>php;peachpie;dotnet;compiler;roslyn</PackageTags>
     <RepositoryUrl>https://github.com/peachpiecompiler/Peachpie.Microsoft.CodeAnalysis</RepositoryUrl>
     <PackageProjectUrl>https://github.com/peachpiecompiler/Peachpie.Microsoft.CodeAnalysis</PackageProjectUrl>
+    <PackageReadmeFile>PACKAGE-README.md</PackageReadmeFile>
     <StrongNameKeyId>Open</StrongNameKeyId>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Operations\OperationInterfaces.xml" />
+    <None Include="PACKAGE-README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
     <!--
@@ -110,6 +112,8 @@
     <InternalsVisibleTo Include="VBCSCompiler.UnitTests" />
     <InternalsVisibleTo Include="DynamicProxyGenAssembly2" Key="$(MoqPublicKey)" LoadsWithinVisualStudio="false" />
     <InternalsVisibleTo Include="CompilerBenchmarks" />
+    <InternalsVisibleTo Include="Peachpie.CodeAnalysis" Key="$(PeachpieKey)" />
+    <InternalsVisibleTo Include="peach" Key="$(PeachpieKey)" />
 
     <EmbeddedResource Update="CodeAnalysisResources.resx" GenerateSource="true" />
     <EmbeddedResource Include="Resources\default.win32manifest" />
